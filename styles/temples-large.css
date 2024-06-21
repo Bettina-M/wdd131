@@ -1,0 +1,57 @@
+@media screen and (min-width: 650px){ 
+    
+
+body{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    background-color: #d9d9d9;
+}
+h2{
+    padding:10px
+}
+header,footer {
+    background-color:#A9A9A9;
+    color:#023047;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+nav a{
+    color:#023047;
+    flex: 1 1 100%;
+    padding:1rem;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    
+}
+
+nav :hover{
+ text-decoration: underline;
+}
+nav :active{
+    color:black;
+}
+
+div{
+    max-width: 1200px;
+    width:100%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+    grid-template-rows: repeat(3, 1.5fr);
+    justify-content: center;
+    gap:15px;
+}
+#menu{
+    display: none;
+}
+footer{
+    margin-top: 15px;
+}
+
+}
