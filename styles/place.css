@@ -55,7 +55,7 @@ main{
 
 
 #box1 {
-    grid-template-columns: 1/-1;
+    grid-column: 1;
     position: absolute;
     top: 20%;
     left:5%;
@@ -84,7 +84,7 @@ td {
 }
 
 #box2{
-    grid-template-columns: 1/-1;
+    grid-column: 1;
     position: absolute;
     right: 5%;
     bottom:5%;
