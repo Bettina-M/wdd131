@@ -1,0 +1,159 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+    
+}
+
+header h1{
+    text-align: center;
+    font-family: 'Bree Serif',sans-serif;
+    font-size: 3rem;
+    background-color: #1b4332;
+    color: white;
+    height: 100px;
+    padding-top: 10px;
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.hero img {
+    width:100%;
+    height:auto;
+    z-index: -1;
+}
+
+.content{
+    line-height: 2.5rem;
+    
+
+}
+
+.content h2{
+    font-family: 'Bree Serif',Arial, Helvetica, sans-serif;
+    background-color: #ba181b;
+    height: 70px;
+    width: 90%;
+    padding:20px;
+    margin-left: -10px;
+}
+
+.content p{
+   
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+#box1 {
+    grid-template-columns: 1/1;
+    position: absolute;
+    top: 20%;
+    left:5%;
+    background-color: rgb(241, 238, 238, 0.5);
+    width:300px;
+    
+    
+}
+
+table {
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+td {
+    padding: 5px;
+}
+.label {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.value {
+    text-align: left;
+}
+
+#box2{
+    grid-template-columns: 1/1;
+    position: absolute;
+    right: 5%;
+    bottom:5%;
+    background-color: rgb(241, 238, 238, 0.5);
+    width:300px;
+    
+}
+
+#box2 h2::after{
+    content: '🌤️';
+}
+
+#box2 img{
+    display: none;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #1b4332;
+    color: white;
+    height: 100px;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-top: -5px;
+    border-top: 10px solid black;
+    
+}    
+
+#footerContent{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    
+}
+
+
+
+@media only screen and (max-width: 700px){
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .hero img {
+        max-width: 100%;
+        height: auto;
+        
+        
+    }
+
+    #box2 img{
+        display: block;
+    }
+
+    #box1, #box2 {
+        position: static;
+        width: 90%;
+        margin: 10px 0;
+        text-align: center;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .content h2 {
+        background-color: white;
+    }
+
+    #box2 h2::after{
+        content: none;
+    }
+
+    
+}

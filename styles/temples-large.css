@@ -44,8 +44,10 @@ div{
     display: grid;
     grid-template-columns: repeat(3, 1.5fr);
     grid-template-rows: repeat(3, 1.5fr);
-    justify-content: center;
+    justify-content:center;
+    
     gap:15px;
+    aspect-ratio: 4/3;
 }
 #menu{
     display: none;
@@ -53,5 +55,6 @@ div{
 footer{
     margin-top: 15px;
 }
+
 
 }

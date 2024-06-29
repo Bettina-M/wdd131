@@ -1,13 +1,16 @@
+/* this is for mobile view */
+
 *{
     margin:0;
     padding:0;
-    box-sizing:content-box
+    box-sizing:border-box
     
 }
 body{
     font-family: 'Roboto',sans-serif;
     font-weight: 300;
     background-color: #d9d9d9;
+    
     
 }
 header,footer {
@@ -39,7 +42,7 @@ nav a:active{
 
 main {
     max-width: 600px;
-    width:100%;
+    max-width:100%;
     margin:0 auto;
     text-align: center;
 }
@@ -62,4 +65,9 @@ main {
 }
 .open a{
     display: block;
+}
+
+div{
+    aspect-ratio: 4/3;
+    
 }
