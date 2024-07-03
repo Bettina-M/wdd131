@@ -10,6 +10,17 @@ main{
     
 }
 
-main img{
+img{
     margin-bottom: 50px;
+    background-color:black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
