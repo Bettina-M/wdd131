@@ -12,7 +12,7 @@ body{
     background-color: #d9d9d9;
     
 }
-header,footer {
+header,footer{
     background-color:#A9A9A9;
     color:#023047;
     text-align: center;
@@ -20,7 +20,13 @@ header,footer {
     padding:20px;
 }
 
-nav button{
+h1, h2{
+    color:#023047;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a{
     color:#023047;
     display: block;
     text-align: center;
@@ -33,10 +39,10 @@ nav button{
     margin: 0 auto;
 }
 
-nav button:hover{
+nav a:hover{
  text-decoration: underline;
 }
-nav button:active{
+nav a:active{
     color:black;
 }
 
@@ -62,7 +68,7 @@ main {
     content: "❎";
     font-size: 2rem;
 }
-.open button{
+.open a{
     display: block;
 }
 

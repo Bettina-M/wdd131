@@ -123,7 +123,7 @@ const temples = [
         name.textContent = temple.templeNamename;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
         dedication.innerHTML = `<span class= "label">Dedication:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span class= "label">Size:</span> ${temple.area}`;
+        area.innerHTML = `<span class= "label">Size:</span> ${temple.area} sq ft`;
         img.setAttribute('src', temple.imageUrl);
         img.setAttribute('alt','Photo of Temple');
         img.setAttribute('loading', 'lazy');
@@ -142,22 +142,28 @@ const temples = [
     );
   }
 
-document.getElementById('home').addEventListener('click', () => createTempleCard(temples));
+document.getElementById('home').addEventListener('click', () => {createTempleCard(temples);
+document.getElementById('tab-heading').innerText="Home";});
+
 document.getElementById('old').addEventListener('click', () => {
     const oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() <= 1900);
     createTempleCard(oldTemples);
+    document.getElementById('tab-heading').innerText = "Old Temples";
 });
 
 document.getElementById('new').addEventListener('click', () => {
     const newTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() >= 2000);
     createTempleCard(newTemples);
+    document.getElementById('tab-heading').innerText = "New Temples";
 });
 
 document.getElementById('large').addEventListener('click', () => {
     const largeTemples = temples.filter(temple => temple.area > 90000);
     createTempleCard(largeTemples);
+    document.getElementById('tab-heading').innerText = "Large Temples";
 });
 document.getElementById('small').addEventListener('click', () => {
     const smallTemples = temples.filter(temple => temple.area <= 10000);
     createTempleCard(smallTemples);
+    document.getElementById('tab-heading').innerText = "Small Temples";
 });
