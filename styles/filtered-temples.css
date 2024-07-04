@@ -1,5 +1,9 @@
 /* this is for mobile view */
-
+:root{
+    ---primary-color:#A9A9A9;
+    ---body-color:#d9d9d9;
+    ---secondary-color:#023047;
+}
 *{
     margin:0;
     padding:0;
@@ -9,25 +13,25 @@
 body{
     font-family: 'Roboto',sans-serif;
     font-weight: 300;
-    background-color: #d9d9d9;
+    background-color: var(---body-color);
     
 }
 header,footer{
-    background-color:#A9A9A9;
-    color:#023047;
+    background-color:var(---primary-color);
+    color:var(---secondary-color);
     text-align: center;
     margin:0;
-    padding:20px;
+    padding:15px;
 }
 
-h1, h2{
-    color:#023047;
+h1, h2, h3, p{
+    color:var(---secondary-color);
     text-align: center;
     padding: 10px;
 }
 
 nav a{
-    color:#023047;
+    color:var(---secondary-color);
     display: block;
     text-align: center;
     background: none;
@@ -56,7 +60,7 @@ main {
     position: absolute;
     top: 20px;
     left:20px;
-    color:#023047;
+    color:var(---secondary-color);
     font-size: 2rem;
 }
 
@@ -78,9 +82,18 @@ main {
     align-items: center;
 }
 
+.templeSection section{
+    background-color: #adb5bd;
+    border: solid black 1px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px #444444;
+    
+}
+
 .templeSection img{
     max-width: 400px;
     height:auto;
+   
 }
 
 footer{

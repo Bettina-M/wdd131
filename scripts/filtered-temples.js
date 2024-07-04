@@ -120,7 +120,7 @@ const temples = [
         
 
         //add information to the elements created above
-        name.textContent = temple.templeNamename;
+        name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
         dedication.innerHTML = `<span class= "label">Dedication:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class= "label">Size:</span> ${temple.area} sq ft`;
@@ -128,11 +128,12 @@ const temples = [
         img.setAttribute('alt','Photo of Temple');
         img.setAttribute('loading', 'lazy');
 
-        card.appendChild(img);
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedication);
         card.appendChild(area);
+        card.appendChild(img);
+
         
 
         container.appendChild(card);
