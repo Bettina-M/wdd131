@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bettina Menya">
+    <meta name="description" content="WDD 131 -Product Review Assigment">
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" id="form">
+            <label for="selector">Product Name <span style="color:red;">*</span> </label><br>
+            <select id="selector" name="selection"  required>
+                <option value="" disabled selected>Select a Product </option>
+            </select>
+            <div class="star-rating">
+                <p id="starlabel">Overall Rating <span style="color:red;">*</span></p>
+                
+                    <div class="rating">
+                        <span class="star">&star;</span>
+                        <input type="radio" name="rating" value="1">
+                    </div>
+                
+                    <div class="rating">
+                        <span class="star">&star;&star;</span>
+                        <input type="radio" name="rating" value="2">
+                    </div>
+
+                    <div class="rating">
+                        <span class="star">&star;&star;&star;</span>
+                        <input type="radio" name="rating" value="3">
+                    </div>
+
+                    <div class="rating">
+                        <span class="star">&star;&star;&star;&star;</span>
+                        <input type="radio" name="rating" value="4">
+                    </div>
+
+                    <div class="rating">
+                        <span class="star" >&star;&star;&star;&star;&star;</span>
+                        <input type="radio" name="rating" value="5">
+                    </div>
+                
+                
+            </div>
+            <div class="installation-date" >
+                <label for="date">Date of  installation <span style="color:red;">*</span></label><br>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="features">
+                <P>Which features did you find useful in the product?</P>
+                <p>(check all that apply)</p>
+                <input type="checkbox" id="one" name="checkbox">
+                <label for="one">Durability</label><br>
+                <input type="checkbox" id="two" name="checkbox">
+                <label for="two">Ease of Use</label><br>
+                <input type="checkbox" id="three" name="checkbox">
+                <label for="three">Perfomance</label><br>
+                <input type="checkbox" id="four" name="checkbox">
+                <label for="four">Design</label>
+            </div>
+            <div class="review">
+                <label for="review">Written Review (Optional)</label><br>
+                <textarea id="review" name="review" rows="10" cols="50"></textarea>
+            </div>
+            <div class="name">
+                <label for="name">Your Name (optional)</label><br>
+                <input type="text" id="name" name="name" >
+            </div>
+            <button id="post-review"> Post Review</button>
+        </form>
+        <p id="count"></p>
+    </main>
+    <footer>
+        <p> &copy; <span id=currentYear></span> Bettina Menya</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
