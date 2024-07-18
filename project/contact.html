@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bettina Menya">
+    <meta name="description" content="WDD 131 -Website Project">
+    <script src="script/project.js" defer></script>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto&display=swap" rel="stylesheet">
+    <title>Eternal Bonds: Christian Insights on Marriage and Relationships</title>
+</head>
+<body>
+    <header>
+        <h1 id="main-header">Eternal Bonds</h1>
+        <nav>
+            <a href="project-home.html" target="_self">Home</a>
+            <a href="about-me.html" target="_self">About Me</a>
+            <a href="contact.html" target="_self">Contact</a>
+        </nav>
+    </header>
+    <main id="contact-page">
+        <!--Make sure to add SRC Set and lazy loading to all the images-->
+        <h2>Love to read more?</h2>
+        <p>Subscribe to stay updated! Join our community for the latest news and articles.</p>
+        <form method="post" id="form">
+            <fieldset>
+                <legend>Subscribe to newsletter</legend>
+                <label for="person-name">Name<span class="asterisk"> *</span></label>
+                <input type="text" id="person-name" name="person-name" required> <br><br>
+                <label for="email">Email <span class="asterisk">*</span></label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="frequency">Email Frequency</label>
+                <select id="frequency" name="frequency">
+                    <option value="" disabled selected >Choose</option>
+                </select><br>
+                <input type="submit" id="submit" name="Subscribe">
+
+            </fieldset>
+        </form>
+        <p id="demo"></p>
+    </main>
+    <footer>
+        <div id="socials">
+            <a href="https://www.facebook.com/BettinaMenya/" target="_blank"><img src="images/facebook-icon.png" alt="facebook icon"></a>
+            <a href="https://www.linkedin.com/in/bettina-menya/" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.instagram.com/betina_menya" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn icon"></a>
+        </div>
+        
+        <div id="info">
+            <p>&copy; <span id="currentYear"></span> Eternal Bonds | <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
